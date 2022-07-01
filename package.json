@@ -1,0 +1,25 @@
+{
+  "name": "@gansukhb/midi-lyrics-parse",
+  "version": "1.0.0",
+  "description": "Lyrics parser from MIDI to JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GansukhB/midi-lyrics-parse.git"
+  },
+  "author": "GansukhB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GansukhB/midi-lyrics-parse/issues"
+  },
+  "homepage": "https://github.com/GansukhB/midi-lyrics-parse#readme",
+  "dependencies": {
+    "ass-compiler": "^0.1.4",
+    "fs": "^0.0.1-security",
+    "kar-to-ass": "^1.0.10"
+  },
+  "devDependencies": {}
+}
