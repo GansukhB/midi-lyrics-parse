@@ -1,6 +1,6 @@
 {
-  "name": "@gansukhb/midi-lyrics-parse",
-  "version": "1.0.0",
+  "name": "midi-lyrics-parse",
+  "version": "1.0.1",
   "description": "Lyrics parser from MIDI to JSON",
   "main": "index.js",
   "scripts": {

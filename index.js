@@ -2,7 +2,7 @@ const { readFileSync } = require("fs");
 const { parseKar, convertKarToAss } = require("kar-to-ass");
 const { parse } = require("ass-compiler");
 
-function parseLyrics(filePath) {
+function parseLyrics(filePath, pretty = false) {
   const fileContent = readFileSync(filePath, async function (err, data) {
     return data;
   });
@@ -12,7 +12,11 @@ function parseLyrics(filePath) {
     progressive: false,
   });
   const parsedASS = parse(assString);
-  const string = JSON.stringify(parsedASS, null, 4);
+  var string = "";
+  if (pretty) {
+    string = JSON.stringify(parsedASS, null, 4);
+  }
+  string = JSON.stringify(parsedASS);
   return string;
 }
 module.exports = parseLyrics;
